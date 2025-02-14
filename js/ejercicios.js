@@ -171,23 +171,22 @@ let adn = prompt("ingrese una pequeña cadena de texto (ADN):");
 
 const transcribir = (adn) => {
   let nueva = Array.from(adn);
-  let sobre = [];
   for (let h = 0;  h < nueva.length;h++ ){
     if (nueva=="G" ) {
-      sobre[h] = "C";
+      nueva[h] = "C";
     }
     if (nueva == "C") {
-      sobre[h] = "G";
+      nueva[h] = "G";
     }
     if (nueva=="T") {
-      sobre[h] = "A";
+      nueva[h] = "A";
     }
     if (nueva=="A") {
-      sobre[h] = "U";
+      nueva[h] = "U";
     }
     
   }
-  console.log(sobre);
+  return sobre.join("");
 }
 let resul = transcribir(adn);
 console.log(resul);
@@ -206,3 +205,5 @@ console.log(resul);
 // }
 // let re = capitalizar(str);
 // console.log(re);
+
+//13.

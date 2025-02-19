@@ -167,29 +167,29 @@
 //T->A
 //A->U
 
-let adn = prompt("ingrese una pequeña cadena de texto (ADN):");
+// let adn = prompt("ingrese una pequeña cadena de texto (ADN):");
 
-const transcribir = (adn) => {
-  let nueva = Array.from(adn);
-  for (let h = 0;  h < nueva.length;h++ ){
-    if (nueva=="G" ) {
-      nueva[h] = "C";
-    }
-    if (nueva == "C") {
-      nueva[h] = "G";
-    }
-    if (nueva=="T") {
-      nueva[h] = "A";
-    }
-    if (nueva=="A") {
-      nueva[h] = "U";
-    }
+// const transcribir = (adn) => {
+//   let nueva = Array.from(adn);
+//   for (let h = 0;  h < nueva.length;h++ ){
+//     if (nueva=="G" ) {
+//       nueva[h] = "C";
+//     }
+//     if (nueva == "C") {
+//       nueva[h] = "G";
+//     }
+//     if (nueva=="T") {
+//       nueva[h] = "A";
+//     }
+//     if (nueva=="A") {
+//       nueva[h] = "U";
+//     }
     
-  }
-  return sobre.join("");
-}
-let resul = transcribir(adn);
-console.log(resul);
+//   }
+//   return sobre.join("");
+// }
+// let resul = transcribir(adn);
+// console.log(resul);
 
 
 

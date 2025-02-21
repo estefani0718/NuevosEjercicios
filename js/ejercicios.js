@@ -170,7 +170,7 @@
 // let adn = prompt("ingrese una pequeña cadena de texto (ADN):");
 
 // const transcribir = (adn) => {
-//   let nueva = Array.from(adn);
+//   let nueva = adn.split(adn);
 //   for (let h = 0;  h < nueva.length;h++ ){
 //     if (nueva=="G" ) {
 //       nueva[h] = "C";
@@ -186,7 +186,7 @@
 //     }
     
 //   }
-//   return sobre.join("");
+//   return nueva.join("");
 // }
 // let resul = transcribir(adn);
 // console.log(resul);

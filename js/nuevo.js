@@ -25,16 +25,21 @@ const opcionValidar = function (opcion_tarjeta) {
     case 4:
       tipo_tarjeta = "mastercard ";
     case 5:
-       tipo_tarjeta = "visa";
+      tipo_tarjeta = "visa";
+    default:
+      break;
   }
-   alert(tipo_tarjeta);
+   return tipo_tarjeta;
 }
-opcionValidar();
+let tipos_tarjetas=opcionValidar(opcion_tarjeta);
 
-let num_credito = parseInt(prompt("ingrese el numero de su tarjeta de credito:"));
-const validar = function (num_credito) {
+if(opcion_tarjeta){
+  let num_credito = parseInt(prompt("ingrese el numero de su tarjeta de credito:"));
+  const validar = function (num_credito,tipo_tarjeta) {
   let regex = /^\d({0-15})$/;  
   if (num_credito == regex) alert("tarjeta valida ");
   else (alert("tarejta no valida ,ingrese de nuevo su numero de tarjeta "))
 }
+}
+
 validar();

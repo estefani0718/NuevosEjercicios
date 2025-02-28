@@ -10,36 +10,36 @@
 
 
 
-let opcion_tarjeta = parseInt(prompt("escoje el tipo de tarjeta de credito:\n1.AMERICAN EXPRES\n2.DINNER CLUB\n3.DISCOVER\n4.MASTERARD.\n5.VISA:"));
+// let opcion_tarjeta = parseInt(prompt("escoje el tipo de tarjeta de credito:\n1.AMERICAN EXPRES\n2.DINNER CLUB\n3.DISCOVER\n4.MASTERARD.\n5.VISA:"));
 
-const opcionValidar = function (opcion_tarjeta) {
-  let tipo_tarjeta = "";
-  switch (opcion_tarjeta) {
-    case 1:
-      tipo_tarjeta = "american expres";
+// const opcionValidar = function (opcion_tarjeta) {
+//   let tipo_tarjeta = "";
+//   switch (opcion_tarjeta) {
+//     case 1:
+//       tipo_tarjeta = "american expres";
      
-    case 2:
-      tipo_tarjeta = "dinner club ";
-    case 3:
-      tipo_tarjeta = "discover";
-    case 4:
-      tipo_tarjeta = "mastercard ";
-    case 5:
-      tipo_tarjeta = "visa";
-    default:
-      break;
-  }
-   return tipo_tarjeta;
-}
-let tipos_tarjetas=opcionValidar(opcion_tarjeta);
+//     case 2:
+//       tipo_tarjeta = "dinner club ";
+//     case 3:
+//       tipo_tarjeta = "discover";
+//     case 4:
+//       tipo_tarjeta = "mastercard ";
+//     case 5:
+//       tipo_tarjeta = "visa";
+//     default:
+//       break;
+//   }
+//    return tipo_tarjeta;
+// }
+// let tipos_tarjetas=opcionValidar(opcion_tarjeta);
 
-if(opcion_tarjeta){
-  let num_credito = parseInt(prompt("ingrese el numero de su tarjeta de credito:"));
-  const validar = function (num_credito,tipo_tarjeta) {
-  let regex = /^\d({0-15})$/;  
-  if (num_credito == regex) alert("tarjeta valida ");
-  else (alert("tarejta no valida ,ingrese de nuevo su numero de tarjeta "))
-}
-}
+// if(opcion_tarjeta){
+//   let num_credito = parseInt(prompt("ingrese el numero de su tarjeta de credito:"));
+//   const validar = function (num_credito,tipo_tarjeta) {
+//   let regex = /^\d({0-15})$/;  
+//   if (num_credito == regex) alert("tarjeta valida ");
+//   else (alert("tarejta no valida ,ingrese de nuevo su numero de tarjeta "))
+// }
+// }
 
-validar();
+// validar();
